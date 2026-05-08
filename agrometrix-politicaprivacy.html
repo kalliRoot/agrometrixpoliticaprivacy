@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Política de Privacidade | AgroMetrix Radar</title>
+    <!-- Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(145deg, #e9f5e9 0%, #c8e6c9 100%);
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', system-ui, -apple-system, sans-serif;
+            line-height: 1.55;
+            color: #1a2e1f;
+            padding: 2rem 1rem;
+        }
+
+        /* container principal estilo "card" agrícola */
+        .privacy-container {
+            max-width: 1120px;
+            margin: 0 auto;
+            background: #fffffffa;
+            backdrop-filter: blur(0px);
+            border-radius: 2rem;
+            box-shadow: 0 25px 45px -12px rgba(0, 32, 0, 0.35);
+            overflow: hidden;
+            transition: all 0.2s ease;
+        }
+
+        /* cabeçalho com identidade visual */
+        .header-privacy {
+            background: #1b4d1f;
+            background-image: radial-gradient(circle at 10% 30%, #2b6e2e, #0e3a12);
+            padding: 2rem 2rem 1.8rem 2rem;
+            color: white;
+            border-bottom: 5px solid #f5b042;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .logo-icon {
+            font-size: 2.6rem;
+            filter: drop-shadow(2px 4px 6px rgba(0,0,0,0.2));
+        }
+
+        .logo-text {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.3px;
+            background: linear-gradient(135deg, #FFF8E7, #FFE6B3);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            text-shadow: none;
+        }
+
+        .badge-agro {
+            background: #f5b04220;
+            backdrop-filter: blur(4px);
+            padding: 0.3rem 0.9rem;
+            border-radius: 40px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            border: 1px solid #f5b04280;
+            display: inline-block;
+        }
+
+        .update-date {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #00000030;
+            padding: 0.4rem 1rem;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            margin-top: 1rem;
+            backdrop-filter: blur(4px);
+            width: fit-content;
+        }
+
+        .update-date i {
+            font-size: 0.8rem;
+        }
+
+        /* corpo do documento */
+        .content-policy {
+            padding: 2.2rem 2rem 2.5rem 2rem;
+        }
+
+        /* seções estilo cards suaves */
+        .section-card {
+            background: #fefef7;
+            border-radius: 1.4rem;
+            padding: 1.2rem 1.6rem;
+            margin-bottom: 1.6rem;
+            box-shadow: 0 5px 12px rgba(0, 20, 0, 0.05);
+            border-left: 6px solid #3c9e3e;
+            transition: transform 0.1s ease;
+        }
+
+        .section-card h2 {
+            font-size: 1.6rem;
+            font-weight: 600;
+            color: #1f5422;
+            margin-bottom: 0.75rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-bottom: 2px dotted #cbe5cb;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-card h2 i {
+            font-size: 1.5rem;
+            color: #4caf50;
+        }
+
+        .section-card p, .section-card li {
+            color: #2c3a2a;
+            line-height: 1.5;
+        }
+
+        .section-card ul, .section-card ol {
+            margin: 0.8rem 0 0.4rem 1.8rem;
+        }
+
+        .section-card li {
+            margin: 0.5rem 0;
+        }
+
+        .highlight {
+            background: #eef6e6;
+            border-radius: 12px;
+            padding: 0.1rem 0.4rem;
+            font-weight: 500;
+            color: #1e6b2b;
+        }
+
+        .badge-service {
+            display: inline-block;
+            background: #e7f0e5;
+            border-radius: 20px;
+            padding: 0.2rem 0.8rem;
+            font-size: 0.75rem;
+            margin: 0.2rem 0.4rem 0.2rem 0;
+            font-weight: 500;
+            color: #2d6a2f;
+        }
+
+        .contact-box {
+            background: #eef4ea;
+            border-radius: 1.2rem;
+            padding: 1.2rem 1.6rem;
+            margin-top: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .contact-email {
+            font-size: 1.2rem;
+            font-weight: 600;
+            background: white;
+            padding: 0.5rem 1.2rem;
+            border-radius: 60px;
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            transition: 0.2s;
+        }
+
+        .contact-email a {
+            text-decoration: none;
+            color: #226622;
+            font-weight: 700;
+        }
+
+        .contact-email i {
+            color: #2c7a2d;
+        }
+
+        .footer-note {
+            text-align: center;
+            font-size: 0.75rem;
+            border-top: 1px solid #dde6d5;
+            padding-top: 1.5rem;
+            margin-top: 0.8rem;
+            color: #5e6e58;
+        }
+
+        @media (max-width: 680px) {
+            .content-policy {
+                padding: 1.5rem;
+            }
+            .section-card {
+                padding: 1rem;
+            }
+            .section-card h2 {
+                font-size: 1.35rem;
+            }
+            .logo-text {
+                font-size: 1.4rem;
+            }
+        }
+
+        /* tooltip ou estilo leve */
+        hr {
+            margin: 0.3rem 0;
+            border-color: #cbdcc5;
+        }
+
+        .small-note {
+            font-size: 0.85rem;
+            color: #4e6149;
+        }
+    </style>
+</head>
+<body>
+<div class="privacy-container">
+    <div class="header-privacy">
+        <div class="logo-area">
+            <i class="fas fa-satellite-dish logo-icon"></i>
+            <span class="logo-text">AgroMetrix Radar</span>
+            <span class="badge-agro"><i class="fas fa-tractor"></i>  tecnologia no campo</span>
+        </div>
+        <div class="update-date">
+            <i class="fas fa-calendar-alt"></i> Última atualização: <strong>Maio de 2026</strong>
+            <i class="fas fa-leaf" style="margin-left: 8px;"></i>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.9; max-width: 85%; font-weight: 400;">
+            O AgroMetrix Radar respeita a privacidade dos seus usuários e está comprometido em proteger informações pessoais e operacionais coletadas durante o uso da plataforma.
+        </p>
+    </div>
+
+    <div class="content-policy">
+        <!-- 1. Informações coletadas -->
+        <div class="section-card">
+            <h2><i class="fas fa-database"></i> 1. Informações coletadas</h2>
+            <p>O aplicativo pode coletar:</p>
+            <ul>
+                <li><i class="fas fa-user-circle" style="width: 22px; color:#3c9e3e;"></i> Nome e foto de perfil</li>
+                <li><i class="fas fa-envelope"></i> E-mail utilizado no login</li>
+                <li><i class="fas fa-map-marker-alt"></i> Localização GPS</li>
+                <li><i class="fas fa-chart-line"></i> Informações operacionais inseridas pelo usuário</li>
+                <li><i class="fas fa-chart-simple"></i> Dados de uso do aplicativo</li>
+                <li><i class="fas fa-cloud-sun-rain"></i> Informações climáticas relacionadas à localização</li>
+            </ul>
+        </div>
+
+        <!-- 2. Uso das informações -->
+        <div class="section-card">
+            <h2><i class="fas fa-cogs"></i> 2. Uso das informações</h2>
+            <p>As informações são utilizadas para:</p>
+            <ul>
+                <li>✅ funcionamento do radar de pilotos</li>
+                <li>✅ exibição de pilotos próximos</li>
+                <li>✅ sistema operacional agrícola</li>
+                <li>✅ comunicação entre usuários</li>
+                <li>✅ melhoria da experiência do aplicativo</li>
+                <li>✅ notificações e alertas operacionais</li>
+            </ul>
+        </div>
+
+        <!-- 3. Compartilhamento de dados -->
+        <div class="section-card">
+            <h2><i class="fas fa-share-alt"></i> 3. Compartilhamento de dados</h2>
+            <p>O AgroMetrix Radar <strong>não vende dados pessoais</strong>. Algumas informações podem ser compartilhadas entre usuários conforme as configurações de visibilidade escolhidas pelo próprio usuário.</p>
+            <div class="small-note" style="margin-top: 8px;"><i class="fas fa-lock"></i> Transparência e controle: você define quem vê sua localização e atividades operacionais.</div>
+        </div>
+
+        <!-- 4. Localização (detalhado) -->
+        <div class="section-card">
+            <h2><i class="fas fa-location-dot"></i> 4. Localização</h2>
+            <p>O aplicativo utiliza localização GPS para:</p>
+            <ul>
+                <li>📍 funcionamento do radar operacional</li>
+                <li>📍 exibição de pilotos próximos</li>
+                <li>📍 operações em mapa</li>
+                <li>📍 alertas regionais</li>
+            </ul>
+            <p>O usuário pode desativar permissões de localização nas configurações do dispositivo. Ressaltamos que alguns recursos podem ser limitados sem o acesso à localização.</p>
+            <div class="highlight" style="display: inline-block; margin-top: 6px;"><i class="fas fa-mobile-alt"></i> Controle total nas configurações do seu smartphone</div>
+        </div>
+
+        <!-- 5. Segurança -->
+        <div class="section-card">
+            <h2><i class="fas fa-shield-haltered"></i> 5. Segurança</h2>
+            <p>Buscamos utilizar medidas modernas de segurança para proteger as informações armazenadas, incluindo criptografia em trânsito e controles de acesso rigorosos. Embora nenhum sistema seja 100% inviolável, investimos continuamente na proteção dos dados dos nossos usuários.</p>
+        </div>
+
+        <!-- 6. Serviços de terceiros -->
+        <div class="section-card">
+            <h2><i class="fas fa-handshake"></i> 6. Serviços de terceiros</h2>
+            <p>O aplicativo pode utilizar serviços de terceiros, incluindo:</p>
+            <div style="margin: 12px 0 0 0;">
+                <span class="badge-service"><i class="fab fa-google"></i> Firebase</span>
+                <span class="badge-service"><i class="fab fa-google"></i> Google Authentication</span>
+                <span class="badge-service"><i class="fas fa-map"></i> OpenStreetMap</span>
+                <span class="badge-service"><i class="fas fa-cloud"></i> Vercel</span>
+            </div>
+            <p class="small-note" style="margin-top: 12px;">Esses serviços podem coletar dados conforme suas próprias políticas de privacidade. Recomendamos a leitura das respectivas documentações para maiores detalhes.</p>
+        </div>
+
+        <!-- 7. Alterações -->
+        <div class="section-card">
+            <h2><i class="fas fa-pen-nib"></i> 7. Alterações</h2>
+            <p>Esta política pode ser atualizada periodicamente sem aviso prévio. Recomendamos que os usuários revisitem este documento regularmente para se manterem informados sobre como protegemos suas informações. A versão mais recente estará sempre disponível na plataforma.</p>
+            <p><i class="fas fa-history"></i> <strong>Última modificação:</strong> Maio de 2026.</p>
+        </div>
+
+        <!-- 8. Contato + rodapé especial -->
+        <div class="contact-box">
+            <div>
+                <i class="fas fa-headset" style="font-size: 1.6rem; color:#2b6e2e;"></i>
+                <span style="font-weight: 600; margin-left: 8px;">Fale com nossa equipe de privacidade</span>
+            </div>
+            <div class="contact-email">
+                <i class="fas fa-envelope-open-text"></i>
+                <a href="mailto:contato@agrometrix.com">contato@agrometrix.com</a>
+            </div>
+        </div>
+        <div class="footer-note">
+            <i class="fas fa-seedling"></i> AgroMetrix Radar — Inovação e confiança no agronegócio digital.
+            <br>© 2026 | Todos os direitos reservados.
+        </div>
+    </div>
+</div>
+</body>
+</html>
